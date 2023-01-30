@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap');
+
 
 :root{
     --mint: #55e08a;
@@ -10,11 +12,12 @@
     padding: 0;
 }
 body{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: var(--mint);
+    font-family:'Coming Soon', cursive;
 }
 
 h1{
+    /* font-family:'Coming Soon', cursive; */
     margin-top: 200px;
     color: var(--white);
     text-align: center;
@@ -26,6 +29,7 @@ form{
     text-align: center;
 }
 form input[type="text"]{
+    font-family:'Coming Soon', cursive; 
     background-color: var(--mint);
     color: var(--white);
     border-style: none;
@@ -35,7 +39,7 @@ form input[type="text"]::placeholder{
     color: var(--white);
 }
 form input[type="text"]:focus{
-    outline: none;
+    /* outline: none; */
 }
 form input[type="submit"]{
     color: var(--mint);
@@ -76,5 +80,5 @@ form input[type="submit"]:hover{
     margin: 25px 0 50px;
     color: var(--white);
     text-align: center;
-    font-size: 12px;
+    font-size: 14px;
 }

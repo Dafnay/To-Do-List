@@ -39,7 +39,8 @@ list.addEventListener('click', (event)=>{
     }
 });
 
-//Para que aparezcan los checkbox seleccionados como tarea realizada
+//Para que aparezcan los checkbox seleccionados como tarea completada
+
 let updateStats = ()=>{
     let element = list.querySelectorAll('div');
     let checkbox = document.querySelectorAll('input[type="checkbox"]:checked');

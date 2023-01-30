@@ -5,61 +5,73 @@
     --mint: #55e08a;
     --verde:#139439;
     --gray: #55557B;
-    --white: #ffffff;
+    --black: #080808;
+    --white: #f4efef;
 }
 *{
     margin: 0;
     padding: 0;
 }
 body{
-    background-color: var(--mint);
     font-family:'Coming Soon', cursive;
+    background-image: url(/images/page-g7c60991f4_1920.png);
+    background-color: var(--mint);
+    background-repeat: no-repeat;
+    background-position-x: center;
 }
 
 h1{
-    /* font-family:'Coming Soon', cursive; */
     margin-top: 200px;
-    color: var(--white);
+    color: var(--black);
     text-align: center;
     font-size: xxx-large;
+    
 }
+
 form{
     max-width: 400px;
-    margin: 45px auto;
+    margin: 53px auto;
     text-align: center;
 }
+
 form input[type="text"]{
     font-family:'Coming Soon', cursive; 
-    background-color: var(--mint);
-    color: var(--white);
+    background-color: var(--white);
+    color: var(--black);
     border-style: none;
     font-size: 25px;
 }
+
 form input[type="text"]::placeholder{
     color: var(--white);
 }
+
 form input[type="text"]:focus{
-    /* outline: none; */
+    outline: none; 
 }
+
 form input[type="submit"]{
-    color: var(--mint);
+    color: var(--black);
     width: 40px;
     height: 40px;
     border-radius: 50%;
     border-style: none;
     font-size: 2em;
 }
+
 form input[type="submit"]:hover{
     background-color: var(--white);
     cursor: pointer;
     color: var(--verde);
 }
+
 .list-container{
     max-width: 600px;
     margin: 0 auto;
 }
+
 .task-container{
-    background-color: white;
+    background-color: var(--white);
     display:flex;
     justify-content: space-between;
     margin-bottom: 6px;
@@ -69,16 +81,19 @@ form input[type="submit"]:hover{
     font-size: 20px;
     font-weight: 500;
 }
+
 .closeBtn{
-    width: 20px;
-    height: 20px;
+    width: 28px;
+    height: 28px;
 }
+
 .closeBtn:hover{
     cursor: pointer;
 }
+
 #stats{
-    margin: 25px 0 50px;
-    color: var(--white);
+    margin: 35px 0 50px;
+    color: var(--black);
     text-align: center;
     font-size: 14px;
 }

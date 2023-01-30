@@ -21,7 +21,7 @@ let addTask = ()=>{
                 <input type="checkbox"> 
                 ${newValue}
             </label>
-            <img src="./images/delete.png" class="closeBtn">
+            <img src="/images/bote-de-basura.png" class="closeBtn">
         </div>
     `;
     list.innerHTML += newTask;

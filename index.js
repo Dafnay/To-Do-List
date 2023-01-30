@@ -29,6 +29,8 @@ let addTask = ()=>{
     updateStats();
 }
 
+// Es la función que permite seleccionar las tareas o borrar
+
 list.addEventListener('click', (event)=>{
     if(event.srcElement.nodeName == 'INPUT'){
         updateStats();
@@ -37,12 +39,14 @@ list.addEventListener('click', (event)=>{
     }
 });
 
+//Para que aparezcan los checkbox seleccionados como tarea realizada
 let updateStats = ()=>{
     let element = list.querySelectorAll('div');
     let checkbox = document.querySelectorAll('input[type="checkbox"]:checked');
     stats.innerHTML = `Tareas pendientes: ${element.length} Completadas: ${checkbox.length}`;
-};
 
+};
+// Para poder borrar las tareas
 let deleteTask = (id)=>{
     let taskToDelete = document.getElementById(id);
     list.removeChild(taskToDelete);
